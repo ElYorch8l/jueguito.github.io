@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la marca</title>
+    <link rel="stylesheet" type="text/css" href="inicio.css"><!--relaciona el css con esta pagina-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header class="title">
+        <h1>ADIVINA LA MARCA</h1>
+    </header>
+    <img class='imagen'src="https://noticias.coches.com/wp-content/uploads/2016/02/logos-marcas-coches.jpg" alt="logo marcas">
+    <!--instrucciones-->
+    <h2>LAS NORMAS ON LAS SIGUIENTES</h2>
+    <P>1º-INTRODUCE TU NOMBRE</P>
+    <P>2º-UNA VEZ HAS INTRODUCIDO TU NOMBRE, SELECCIONA EL TIPO DE JUEGO QUE QUIERES JUGAR</P>
+    <P>4º-INTRODUCE EL NOMBRE DEL COCHE QUE ES</P>
+    <P>TENDRAS 3 INTENTOS SI FALLAS SE ACABO LO QUE SE DABA</P>
+    <p>TIENES 30 SEGUNDOS PARA ACERTAR LA PALABRA SINO SE ACABO LO QUE SE DABA</p>
+    <P>¡BUENA SUERTE!</P>
+    <!--formuilario pra introducir tu nombre y seleccionar el juevo que quieres jugar-->
+    <form id="miFormulario" action="vehiculos.html" method="get">
+        <label for="palabra">¿CUÁL ES TU NOMBRE?</label>
+        <input type="text" id="palabra" name="palabra" required>
+        <br>
+        <select name="car-type" id="car-type">
+            <option value="cars1">coches</option>
+            <option value="cars2">coches de cine</option>
+        </select>
+        <input type="submit" value="Enviar">
+        
+      </form>
+    
+    <footer><h6>HECHO POR JORGE SIMÓN PARRA</h6></footer>
+</body>
+</html>
